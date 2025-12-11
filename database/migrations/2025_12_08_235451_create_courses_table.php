@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('available_seats');
             $table->string('rating')->default(0)->nullable();
             $table->string('duration')->nullable();
-            $table->foreignId('category_id')->constrained();
+            $table->string('category')->nullable();
             $table->timestamps();
         });
     }

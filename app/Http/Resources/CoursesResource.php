@@ -24,10 +24,7 @@ class CoursesResource extends JsonResource
             'available_seats' => $this->available_seats,
             'rating' => $this->rating,
             'duration' => $this->duration,
-            'category' => $this->category ? [
-                'id' => $this->category->id,
-                'name' => $this->category->name
-            ] : null,
+            'category' => $this->category ,
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
         ];

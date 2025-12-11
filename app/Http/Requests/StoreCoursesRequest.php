@@ -30,7 +30,7 @@ class StoreCoursesRequest extends FormRequest
             'available_seats'=>['required','max:255'],
             'rating'=>['nullable','max:255'],
             'duration'=>['nullable','max:255'],
-            'category_id' => 'required|exists:categories,id'
+            'category' => 'required|string',
 
         ];
     }

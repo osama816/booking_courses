@@ -18,7 +18,7 @@ class Courses extends Model
         'available_seats',
         'rating',
         'duration',
-        'category_id'
+        'category'
     ];
 
     /**
@@ -26,10 +26,7 @@ class Courses extends Model
      */
 
 
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
+
     public function booking()
     {
         return $this->hasMany(Booking::class);
